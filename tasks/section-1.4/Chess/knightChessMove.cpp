@@ -1,3 +1,4 @@
+#include <cmath>
 #include <iostream>
 using namespace std;
 
@@ -8,7 +9,7 @@ int main() {
   cin >> y;
   cin >> x0;
   cin >> y0;
-  if ((x - x0 == 1 || x - x0 == -1) && (y - y0 == -2 || y - y0 == 2)) {
+  if (abs(y0 - y) * abs(x0 - x) == 2) {
     cout << "YES" << endl;
   } else {
     cout << "NO" << endl;
